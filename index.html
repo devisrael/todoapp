@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="devisrael" />
+    <title>Todoapp&mdash;devisrael</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="alert">
+      <div class="alert__content">
+        <p>Are you sure you want to delete?</p>
+        <div class="cta">
+          <a href="#" class="btn-primary">yes</a>
+          <a href="#" class="btn-secondary">no</a>
+        </div>
+        <div class="hide">
+          <input type="checkbox" >
+          <p>dont ask again</p>
+        </div>
+      </div>
+    </div>
+    <main class="site__main">
+     <div class="container">
+      <nav class="nav">
+       <div class="control">
+          <div class="settings">
+            <svg class="nav__icon">
+              <use xlink:href="vendor/icont/sprit.svg#icon-cog"></use>
+            </svg>
+            <div class="settings__dropdown">
+              <p>color settings</p>
+              <div class="color">
+                <div class="color1"></div>
+                <div class="color2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="add" id="myBtn">
+            <span>&plus;</span>
+          </div>
+       </div>
+        <header class="header">
+          <h1 class="header__title">
+            <span class="emp">your</span><span>todo. </span>
+            <!-- <p>compeleted <span class="checked">0</span> of <span class="unchecked">0</span> items</p> -->
+            <p><span class="unchecked">0  </span> items</p>
+          </h1>
+        </header>
+      </nav>
+     
+      <main class="main">
+        <ul class="main__list"></ul>
+      </main>
+    </main>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form action="" class="form">
+          <input
+            type="text"
+            placeholder="Enter Todo..."
+            class="form__input"
+            autofocus
+            autocomplete="additional-name"
+          />
+        </form>
+      </div>
+     </div>
+    </div>
+
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
